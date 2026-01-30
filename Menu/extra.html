@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hager Bet - Extras Menu</title>
+    <link rel="stylesheet" href="extra.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <!-- Left Title Section -->
+      <aside class="menu-title">
+        <h1>HAGER BET<br /><span>ሀገር ቤት</span></h1>
+        <h2>Extras<br /><span></span></h2>
+      </aside>
+
+      <!-- Right Menu Grid -->
+      <section class="menu-grid">
+        <!-- Dish 1 (Best Seller) -->
+        <div
+          class="menu-item"
+          onclick="openModal('Doro Wot (ዶሮ ወጥ)','Spicy chicken stew served with injera.', '../Images/doro-wot.jpg')"
+        >
+          <div class="number">1</div>
+          <img src="../Images/injera.jpg" alt="Injera" />
+          <div class="details">
+            <h3>Injera( እንጀራ) <span class="price">ETB 280</span></h3>
+            <p>
+              Traditional Ethiopian sourdough flatbread made from teff flour,
+              served as both plate and utensil for all dishes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div
+          class="menu-item"
+          onclick="openModal('Tibs (ጥብስ)','Pan-fried beef with onions, peppers and spices.', '../Images/tibs.jpg')"
+        >
+          <div class="number">2</div>
+          <img src="../Images/ambasha.jpg" alt="Ambasha" />
+          <div class="details">
+            <h3>Ambasha (አምባሻ) <span class="price">ETB 250</span></h3>
+            <p>
+              Traditional Tigrayan sweet bread flavored with cardamom and
+              fenugreek, perfect with tea or coffee
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div
+          class="menu-item"
+          onclick="openModal('Kitfo (ክትፎ)','Minced raw or rare beef seasoned with spiced butter and mitmita.', '../Images/kitfo.jpg')"
+        >
+          <div class="number">3</div>
+          <img src="../Images/defo.jpg" alt="Defo Dabo " />
+          <div class="details">
+            <h3>Defo Dabo (ደፎ ዳቦ) <span class="price">ETB 320</span></h3>
+            <p>
+              Traditional Ethiopian holiday bread, large and round, spiced with
+              coriander and fenugreek.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 4 -->
+        <div
+          class="menu-item"
+          onclick="openModal('Dulet (ዱለት)','Spicy minced liver, kidney & tripe with spices.', '../Images/dulet.jpg')"
+        >
+          <div class="number">4</div>
+          <img src="../Images/kocho.jpg" alt="Kocho" />
+          <div class="details">
+            <h3>Kocho (ቆጮ) <span class="price">ETB 230</span></h3>
+            <p>
+              traditional Ethiopian fermented, bread-like food made from the
+              processed corm and pseudostem of the enset plant
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 5 -->
+        <div
+          class="menu-item"
+          onclick="openModal('Firfir (ፍርፍር)','Injera pieces sautéed with spicy berbere sauce.', '../Images/firfir.jpg')"
+        >
+          <div class="number">5</div>
+          <img src="../Images/popcorn.jpg" alt="popcorn" />
+          <div class="details">
+            <h3>Popcorn (ፋንዲሻ) <span class="price">ETB 200</span></h3>
+            <p>Freshly popped corn kernels, lightly salted.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <div id="foodModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" src="" alt="Dish" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <!-- <script src="extra.js"></script> -->
+  </body>
+</html>

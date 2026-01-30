@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f1317;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: #fff;
+}
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #0a0d10;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .logo span {
+  display: block;
+  font-size: 12px;
+  color: #bbb;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #e67e22;
+}
+/* ===== hero ===== */
+.menu-hero {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Images/ff.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.menu-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.menu-hero p {
+  color: #ccc;
+}
+
+/* ===== Today’s Special ===== */
+.todays-special {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.todays-special h2 {
+  margin-bottom: 20px;
+  color: #ffd166;
+  text-align: left;
+}
+.special-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.special-box {
+  flex: 1;
+  min-width: 200px;
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* ===== Appetizers ===== */
+.appetizers {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 18px;
+}
+.appetizers h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #ffd166;
+}
+.appetizer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.app-item {
+  background: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 260px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+}
+.app-item:hover {
+  transform: translateY(-6px);
+}
+.app-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.app-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #ffd166;
+}
+.app-item p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+/* ===== Menu Section (categories) ===== */
+.menu-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 18px;
+}
+.menu-section h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #ffd166;
+}
+.menu-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-box {
+  position: relative;
+  width: 260px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.menu-box:hover {
+  transform: translateY(-6px);
+}
+
+/* background image */
+.menu-box img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* dark overlay */
+.menu-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  z-index: 2;
+}
+
+/* text */
+.menu-content {
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+}
+.menu-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+.menu-content p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+.cta {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* ===== responsive ===== */
+@media (max-width: 768px) {
+  .special-grid {
+    flex-direction: column;
+  }
+  .menu-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .appetizer-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
