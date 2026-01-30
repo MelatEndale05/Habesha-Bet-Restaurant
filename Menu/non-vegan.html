@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hager Bet — Menu / ሀገር ቤት ምናጭ</title>
+
+  <!-- Fonts (including Ethiopic) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&family=Poppins:wght@300;400;600&family=Noto+Sans+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="non-vegan.css">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <div class="mast-label">"Hager Bet"</div>
+      <h1 class="mast-title">Non-vegan</h1>
+      <div class="mast-sub">Hager Bet — ሀገር ቤት</div>
+    </header>
+
+    <main class="menu-wrap">
+      <div id="menu-items" class="menu-items" aria-live="polite"></div>
+    </main>
+
+    <!-- Modal for clicked dish -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-overlay" id="modal-overlay"></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-grid">
+          <div class="modal-image">
+            <img id="modal-img" src="" alt="">
+          </div>
+          <div class="modal-info">
+            <h2 id="modal-title"></h2>
+            <h3 id="modal-amharic" class="amharic"></h3>
+            <div id="modal-price" class="price"></div>
+            <p id="modal-desc" class="desc"></p>
+            <div class="modal-actions">
+              <button id="order-btn" class="btn">Order (demo)</button>
+              <a id="review-btn" class="btn" href="../Review/review.html">Leave a review</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+  <script src="non-vegan.js"></script>
+</body>
+</html>
+
