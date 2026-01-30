@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations - Hager Bet Restaurant</title>
+    <link rel="stylesheet" href="reservation.css" />
+  </head>
+
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="myversion.html">HAGER BET</a>
+        <ul class="nav-links">
+          <li><a href="../myversion.html">Home</a></li>
+          <li><a href="../Menu/menu.html">Menu</a></li>
+          <li><a href="../About us/about-us.html">About</a></li>
+          <li><a href="reservation.html" class="active">Reservations</a></li>
+          <li><a href="../Review/review.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="reservation-hero">
+      <div class="hero-overlay">
+        <h1>Reservations</h1>
+        <form class="reservation-form" id="reservation-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <select id="guests" name="guests" required>
+            <option value="" disabled selected>Select Guests</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6+ People</option>
+          </select>
+          <input type="date" id="date" name="date" required />
+          <input type="time" id="time" name="time" required />
+          <button type="submit" id="book-btn">Book a Table</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <!-- Special Events -->
+        <div class="footer-col">
+          <h3>Special Events</h3>
+          <p>Planning a special celebration? We offer:</p>
+          <ul>
+            <li>Private dining room for up to 25 guests</li>
+            <li>Customized family-style menus</li>
+            <li>Traditional coffee ceremony</li>
+            <li>Cultural entertainment arrangements</li>
+          </ul>
+        </div>
+
+        <!-- Reservation Policies -->
+        <div class="footer-col">
+          <h3>Reservation Policies</h3>
+          <ul>
+            <li>Reservations recommended, especially on weekends</li>
+            <li>15-minute grace period before table is released</li>
+            <li>Large parties (8+) require phone confirmation</li>
+            <li>24-hour cancellation policy for parties of 6+</li>
+            <li>Special dietary needs accommodated with advance notice</li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-col">
+          <h3>Opening Hours</h3>
+          <p>Monday – Friday: 10:00am – 01:00am</p>
+          <p>Saturday – Sunday: 10:00am – 03:00am</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>4kilo, Addis Ababa</p>
+          <p>Phone: 251-111-1111</p>
+          <p>Email: <a href="mailto:info@hagerbet.com">info@hagerbet.com</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="reservation.js"></script>
+</html>
