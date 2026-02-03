@@ -1,0 +1,150 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+ background: #1a1a1a; 
+  color: #fff;
+}
+
+.menu-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Title */
+.menu-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-title h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.menu-title h1 span {
+  color: #ffd700;
+}
+
+.menu-title h2 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+.menu-title h2 span {
+  color: #ffd700;
+}
+
+/* Beverage Items */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+ background-color: #262626;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.menu-item:hover { transform: scale(1.02); }
+
+.menu-item img {
+  width: 140px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* Positioning for the hover review button */
+.menu-item { position: relative; }
+
+.leave-review-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  background: #ffd700;
+  color: #002b2b;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+}
+
+.menu-item:hover .leave-review-btn {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+  pointer-events: auto;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.price { color: #ffd700; }
+
+.details p { font-size: 0.95rem; color: #ddd; }
+
+.badge {
+  margin-top: 6px;
+  display: inline-block;
+  background: #ffd700;
+  color: #003333;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

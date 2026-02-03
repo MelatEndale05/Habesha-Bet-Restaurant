@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beverages Menu - Hager Bet</title>
+    <link rel="stylesheet" href="beverages.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <!-- Title -->
+      <header class="menu-title">
+        <h1>HAGER BET <br /><span>ሀገር ቤት</span></h1>
+        <h2>Beverages <br /><span></span></h2>
+      </header>
+
+      <!-- Drinks List -->
+      <section class="menu-list">
+        <!-- Tej -->
+        <div
+          class="menu-item"
+          onclick="openModal('Tej (ጠጅ)','Traditional honey wine.', '../Images/tej.jpg')"
+        >
+          <img src="../Images/tej.jpg" alt="Tej" />
+          <div class="details">
+            <h3>Tej (ጠጅ) <span class="price">ETB 150</span></h3>
+            <p>Traditional honey wine.</p>
+            <span class="badge">Best Seller</span>
+          </div>
+          <a href="../Review/review.html" class="leave-review-btn" onclick="event.stopPropagation();">Leave a review</a>
+        </div>
+
+        <!-- Tella -->
+        <div
+          class="menu-item"
+          onclick="openModal('Tella (ጠላ)','Homemade Ethiopian barley beer.', '../Images/tella.jpg')"
+        >
+          <img src="../Images/tela.jpg" alt="Tella" />
+          <div class="details">
+            <h3>Tella (ጠላ) <span class="price">ETB 120</span></h3>
+            <p>Homemade Ethiopian barley beer.</p>
+          </div>
+          <a href="../Review/review.html" class="leave-review-btn" onclick="event.stopPropagation();">Leave a review</a>
+        </div>
+
+        <!-- Birz -->
+        <div
+          class="menu-item"
+          onclick="openModal('Birz (ብርዝ)','Fermented honey drink (non-alcoholic).', '../Images/birz.jpg')"
+        >
+          <img src="../Images/birz.jpg" alt="Birz" />
+          <div class="details">
+            <h3>Birz (ብርዝ) <span class="price">ETB 100</span></h3>
+            <p>Fermented honey drink (non-alcoholic).</p>
+          </div>
+          <a href="../Review/review.html" class="leave-review-btn" onclick="event.stopPropagation();">Leave a review</a>
+        </div>
+
+        <!-- Coffee -->
+        <div
+          class="menu-item"
+          onclick="openModal('Coffee (ቡና)','Ethiopian traditional coffee ceremony.', '../Images/coffee.jpg')"
+        >
+          <img src="../Images/coffee.jpg" alt="Coffee" />
+          <div class="details">
+            <h3>Coffee (ቡና) <span class="price">ETB 80</span></h3>
+            <p>Ethiopian traditional coffee ceremony.</p>
+          </div>
+          <a href="../Review/review.html" class="leave-review-btn" onclick="event.stopPropagation();">Leave a review</a>
+        </div>
+
+        <!-- Keneto -->
+        <div
+          class="menu-item"
+          onclick="openModal('Keneto (ከነጦ)','Local fermented barley drink.', '../Images/keneto.jpg')"
+        >
+          <img src="../Images/keneto.jpg" alt="Keneto" />
+          <div class="details">
+            <h3>Keneto (ከነጦ) <span class="price">ETB 90</span></h3>
+            <p>Local fermented barley drink.</p>
+          </div>
+          <a href="../Review/review.html" class="leave-review-btn" onclick="event.stopPropagation();">Leave a review</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <div id="drinkModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" src="" alt="Drink" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <!-- <script src="beverages.js"></script> -->
+  </body>
+</html>
